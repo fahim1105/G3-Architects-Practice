@@ -8,16 +8,36 @@
   font-weight: 400;
   font-style: normal;
 }
+
 /* display flex */
+
 .display-flex{
     display: flex;
 }
+
 /* Colors */
+
 .dark-01{
     color: #131313;
 }
 .dark-02{
     color:#424242;
+}
+.dark-03{
+    color: #727272;
+}
+.BG-color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.button-color{
+    background-color: #FF900E;
+}
+
+/* Navbar Design */
+
+.nav-heading{
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 .nav-list{
     list-style: none;
@@ -25,4 +45,142 @@
 }
 .nav-link{
     text-decoration: none;
+    font-size: 1.02rem;
+    font-weight: 500;
 }
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*  Navbar and Banner Combination */
+
+.nav-container , .banner-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Banner Design */
+
+.banner-info{
+    max-width: 855px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.explore-more-button{
+    border:none;
+    border-radius: 10px;
+    padding: 20px 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.button-link{
+    text-decoration: none;
+    color:white;
+
+}
+.banner-image{
+    width: 100%;
+}
+/* Responsive Navbar and Banner for Mobile Device */
+@media screen and (max-width:576px) {
+    .navbar {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .nav-link{
+        font-size: 0.8rem;
+    }
+    .nav-heading{
+        font-size: 1.7rem;
+    }
+    .nav-container , .banner-container{
+        margin: 0 20px;
+    }
+    .banner-title{
+        font-size: 2.5rem;
+    }
+    .explore-more-button{
+    border:none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    }
+    .banner-image{
+        border-radius: 10px;
+    }
+
+
+
+}
+
+/* Design Features Section */
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.Features-all-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.4rem;
+}
+.Features-title{
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.Features-title-first{
+    font-weight: 400;
+}
+.Features-title-second{
+    color: #FF900E;
+}
+.Features-Paragraph{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.Features-info{
+    margin-left: 40px;
+}
+.Features-container{
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+}
+
+/* Responsive Features Section for Mobile Device */
+
+@media screen and (max-width:576px) {
+    .Features-all-images{
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.7rem;
+    }
+    .Features-container{
+        flex-direction: column;
+    }
+    .Features-info{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .Features-image{
+        width: 155px;
+    }
+    .Features-container{
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
