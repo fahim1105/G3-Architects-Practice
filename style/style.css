@@ -453,3 +453,29 @@ main{
     margin-top: 90px;
     border-radius: 25px;
 }
+
+/* Let's Play with hover */
+
+.nav-link:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
+.explore-more-button:hover{
+    font-size: 1.8rem;
+    background-color: brown;
+    cursor: pointer;
+
+}
+.extra-button:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+.customer-card:hover{
+    background-color: rgba(253, 160, 160, 0.294);
+    width: 350px;
+}
+.card:hover{
+    width: 230px;
+    height: 230px;
+    background-color:rgba(253, 160, 160, 0.294) ;
+}
