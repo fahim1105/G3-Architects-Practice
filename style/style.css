@@ -139,10 +139,10 @@ main{
     font-weight: bold;
     font-size: 2.8rem;
 }
-.Features-title-first{
+#Features-title-first{
     font-weight: 400;
 }
-.Features-title-second{
+#Features-title-second{
     color: #FF900E;
 }
 .Features-Paragraph{
@@ -181,6 +181,275 @@ main{
 
 }
 
+/* Responsive Features Section for Tablet Device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .Features-container{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .Features-info{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* Design Some Fact Section */
+
+.fact-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 8rem;
+}
+.fact-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 2.8rem;
+}
+.card{
+    text-align: center;
+    border: 1px solid coral;
+    border-radius: 8px;
+    width: 200px;
+    height: 210px;
+    padding: 10px;
+    margin-top: 5rem;
+}
+.fact-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card-title{
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin:20px 0 0 0; 
+}
+.card-paragraph{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin:0;
+}
+.card-image{
+    margin-top: 25px;
+}
 
 
+/* Responsive Fact Section for Mobile Device */
 
+@media screen and (max-width:576px) {
+    .fact-info{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .fact-cards{
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    }
+    .card{
+    width: 150px;
+    height: 160px;
+    padding: 5px;
+    margin: 0 auto;
+    }    
+    .card-title{
+    font-size: 2rem;
+    }
+    .card-paragraph{
+    font-size: 1rem;
+    }
+} 
+
+/* Responsive Features Section for Tablet Device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .card{
+    width: 160px;
+    height: 180px;
+    padding: 5px;
+    margin: 0 auto;
+    }    
+    .card-title{
+    font-size: 2rem;
+    }
+    .card-paragraph{
+    font-size: 1rem;
+    }
+    .fact-cards{
+        gap: 20px;
+        margin-top: 50px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .fact-info{
+        text-align: center;
+    }
+} 
+
+/* Design Sponsor Section */
+
+.Sponsors-info{
+    max-width: 542px;
+    margin: 150px auto 50px;
+    text-align: center;
+}
+.Sponsors-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.Sponsors-paragraph{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.Sponsors-images{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.Sponsors-images img{
+    filter: grayscale(100%);
+}
+
+/* Responsive Sponsor Section for Mobile Device */
+
+@media screen and (max-width:576px) {
+    
+    .Sponsors-images{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 20px;
+    }
+    #last-child{
+        grid-column: span 2;
+    }
+
+} 
+
+/* Responsive Sponsor Section for Tablet Device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .Sponsors-images{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 30px;
+    }
+    #last-child{
+        grid-column:span 2;
+    }
+}
+
+/* Features for customers section design */
+
+.customer-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+#border{
+    border-left: 5px solid #FF900E;
+    padding-left: 30px;
+}
+.customer-description{
+    font-size: 1rem;
+    font-weight:400 ;
+}
+
+/* Card section */
+
+.customer-card-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.customer-card-paragraph{
+    font-size: 1rem;
+    margin-bottom: 0%;
+
+}   
+.customer-card{
+    border-radius: 8px;
+    box-shadow: 0 0 30px #1d1c1c39;
+    margin-top: 15px;
+    padding: 18px;
+}
+
+/* Full */
+
+.container{
+    gap: 100px;
+    margin-top: 130px;
+}
+
+/* image */
+
+.customer-image{
+    height: 882px;
+    width: 610px;
+}
+.extra-button{
+    border:none;
+    border-radius: 10px;
+    padding:35px 35px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -65px;
+    margin-top: -100px;
+}
+#year{
+    font-size: 3.3rem;
+    font-weight: 600;
+}
+
+/* Responsive Features for customers section for Mobile Device */
+
+@media screen and (max-width:576px) {
+    .container{
+        flex-direction: column-reverse; 
+        text-align: center;
+        margin-top: 60px;
+    }
+    .customer-title{
+    font-size: 2.2rem;
+    margin-top: 0px;
+    }
+    .customer-image{
+    height: 432px;
+    width: 300px;
+    margin-bottom: 0;
+    margin-top: 40px;
+    }
+}    
+
+/* Responsive Features for customers section for Tablet Device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .container{
+        flex-direction: column-reverse; 
+        text-align: center;
+        margin-top: 90px;
+    }
+    .customer-title{
+        font-size: 2.5rem;
+        margin-top: 0px;
+    }
+    .customer-image{
+        height: 732px;
+        width: 510px;
+    }
+    .customer-card{
+        padding: 20px;
+        width: 500px;
+        margin: 30px auto;
+    }
+    .extra-button{
+        margin-right: 385px;
+        margin-top: -100px;
+    }
+}
+
+/* design footer section */
+.footer{
+    background-color: rgba(255, 244, 231, 1);
+    text-align: center;
+    padding: 19px;
+    margin-top: 90px;
+    border-radius: 25px;
+}
